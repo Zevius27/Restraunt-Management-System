@@ -3,6 +3,8 @@ import DrinksMenu from "../../components/DrinksMenu";
 import FoodsMenu from "../../components/FoodsMenu";
 import StartersMenu from "../../components/StartersMenu";
 import DessertsMenu from "../../components/DessertsMenu";
+import { HiOutlineArrowRight } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 /**
  * The Menu component renders a section of the page that displays a menu.
@@ -13,6 +15,7 @@ const Menu = () => {
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('starter');
+  const navigate = useNavigate();
 
   const addToCart = (item, type) => {
     // If the item has the remove flag, handle removal
@@ -50,6 +53,18 @@ const Menu = () => {
     return cart.reduce((total, item) => total + (item.price * item.quantity), 0);
   };
 
+  const handleProceedToCheckout = () => {
+    // Redirect to the reservation section
+    navigate('/');
+    // Add a small delay to ensure the page is loaded before scrolling
+    setTimeout(() => {
+      const reservationSection = document.getElementById('reservation');
+      if (reservationSection) {
+        reservationSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   const renderActiveMenu = () => {
     switch (activeTab) {
       case 'starter':
@@ -67,6 +82,9 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
+      <a href="/" className="back-home">
+        <HiOutlineArrowRight />
+      </a>
       <h1>Our Menu</h1>
       <div className="menu-tabs">
         <button 
@@ -125,7 +143,9 @@ const Menu = () => {
                 ))}
                 <div className="cart-total">
                   <h3>Total: ₹{calculateTotal().toFixed(2)}</h3>
-                  <button className="checkout-btn">Proceed to Checkout</button>
+                  <button className="checkout-btn" onClick={handleProceedToCheckout}>
+                    Proceed to Checkout
+                  </button>
                 </div>
               </>
             )}

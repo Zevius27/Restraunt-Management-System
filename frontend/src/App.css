@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
@@ -310,8 +310,8 @@ nav svg {
     height: 350px;
   }
 }
-@media(max-width: 650px){
-  .heroSection{
+@media (max-width: 650px) {
+  .heroSection {
     padding: 0;
   }
 }
@@ -392,6 +392,8 @@ nav svg {
   background: #fff;
   color: #111;
 }
+
+
 @media (max-width: 1520px) {
   .about {
     padding: 30px 20px;
@@ -894,12 +896,7 @@ footer .container .banner .right {
   border-bottom: 1px solid #333;
   background: transparent;
 }
-.reservation
-  .container
-  .banner
-  .reservation_form_box
-  form
-  input[type="email"] {
+.reservation .container .banner .reservation_form_box form input[type="email"] {
   width: 100%;
   margin-bottom: 20px;
   padding: 5px;

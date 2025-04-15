@@ -7,9 +7,10 @@ const Team = () => {
         <div className="heading_section">
           <h1 className="heading">OUR TEAM</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
-            fugit dicta, ipsum impedit quam laboriosam quas doloremque quia
-            perferendis laborum.
+            Meet the passionate chefs behind FreshBite Bowls — a team of
+            culinary experts dedicated to crafting meals that are as nutritious
+            as they are delicious. With years of experience and a love for great
+            food, they bring flavor and creativity to every dish.
           </p>
         </div>
         <div className="team_container">

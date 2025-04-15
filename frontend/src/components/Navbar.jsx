@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="logo">ZEESH FOODS</div>
+        <div className="logo">FreshBite Bowls</div>
         <div className={show ? "navLinks showmenu" : "navLinks"}>
           <div className="links">
             {data[0].navbarLinks.map((element) => (

@@ -42,6 +42,27 @@ const foods = [
     image: "si.png",
     description: "Vanilla ice cream with hot fudge and nuts"
   },
+  {
+    id: 7,
+    name: "Classic fries",
+    price: 555,
+    image: "fries.jpg",
+    description: "Crispy golden fries, perfectly seasoned and served hot."
+  },
+  {
+    id: 8,
+    name: "Chilly paneer",
+    price: 400,
+    image: "WhatsApp Image 2025-04-15 at 17.08.48_61629f06.jpg",
+    description: "Spicy paneer cubes tossed with bell peppers and a tangy sauce."
+  },
+  {
+    id: 9,
+    name: "Super Meal",
+    price: 800,
+    image: "WhatsApp Image 2025-04-15 at 17.08.48_0cac49b7.jpg",
+    description: "A hearty meal featuring a variety of dishes for a complete dining experience."
+  }
 ];
 
 const FoodCard = ({ food, onAddToCart }) => {

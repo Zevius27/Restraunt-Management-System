@@ -55,7 +55,8 @@ const desserts = [
     price: 250,
     image: "fruitTart.png",
     description: "Sweet pastry crust with custard and fresh fruits"
-  }
+  },
+  
 ];
 
 const DessertCard = ({ dessert, onAddToCart }) => {

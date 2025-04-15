@@ -2,8 +2,6 @@
 import { Link } from "react-router-dom";
 import { HiOutlineArrowRight } from "react-icons/hi";
 
-
-
 const About = () => {
   return (
     <>
@@ -15,15 +13,14 @@ const About = () => {
               <p>The only thing we're serious about is food.</p>
             </div>
             <p className="mid">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Provident possimus optio adipisci dolores impedit illum iusto
-              perferendis, laudantium quod accusamus consequuntur consectetur,
-              tempore nulla error iure reiciendis dolorem assumenda.
-              Necessitatibus fugit asperiores totam rem esse exercitationem
-              iusto ipsum qui dolore ex, accusantium repellat mollitia
-              repellendus.
+              At FreshBite Bowls, we believe food is more than just fuel – it's
+              an experience. Every bowl we serve is crafted with care, packed
+              with vibrant, wholesome ingredients to nourish your body and
+              delight your taste buds. Whether you're grabbing a quick bite or
+              enjoying a hearty meal, we’re here to make every dish
+              unforgettable.
             </p>
-            <Link to={"/"}>
+            <Link to={"/menu"}>
               Explore Menu{" "}
               <span>
                 <HiOutlineArrowRight />

@@ -56,6 +56,20 @@ const drinks = [
     price: 140,
     image: "berryFizz.png",
     description: "A sparkling drink made with mixed berries and a splash of soda for a refreshing taste."
+  },
+  {
+    id: 9,
+    name: "Mandarake Soda with lemon",
+    price: 300,
+    image:"WhatsApp Image 2025-04-15 at 17.41.33_ad286152.jpg",
+    description: "A fizzy soda infused with zesty lemon, perfect for a refreshing burst of flavor."
+  },
+  {
+    id: 10,
+    name: "Fruit Of ecsatcy",
+    price: 300,
+    image:"ecsatcy.jpg",
+    description: "A delightful blend of seasonal fruits, creating a sweet and tangy drink that excites the palate."
   }
 ];
 

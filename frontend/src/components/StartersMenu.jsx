@@ -27,6 +27,13 @@ const starters = [
     price: 300,
     image: "/dinner4.png",
     description: "A delicious soup with roasted toast pieces."
+  },
+  {
+    id: 5,
+    name: "noodles",
+    price: 200,
+    image: "/dinner5.png",
+    description: "Delicious noodles cooked to perfection with a savory sauce."
   }
 ];
 
